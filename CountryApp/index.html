@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:image" content="balratlasImg.png">
+    <title>BalrAtlas.com</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="lightTheme">
+    <header>
+      <h1>
+        <a href="https://balratlas.netlify.app/">
+        <span><img src="balratlasImg.png" alt="" /></span>
+        <p id="fname">Balr</p>
+        <p id="lname">Atlas</p>
+        </a>
+      </h1>
+      <button id="themeToggle"><i class="fa-solid fa-sun"></i></button>
+    </header>
+    <main id="main">
+      <section class="controls">
+        <span id="search">
+          <span id="faglass">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </span>
+          <input  type="text" id="searchInput" placeholder="Search country..." />
+        </span>
+
+        <select id="regionFilter">
+          <option value="all">Filter by Region</option>
+          <option value="asia">Asia</option>
+          <option value="europe">Europe</option>
+          <option value="africa">Africa</option>
+          <option value="americas">Americas</option>
+          <option value="oceania">Oceania</option>
+        </select>
+      </section>
+
+      <section style="position: relative;" id="countriesContainer">
+        <!-- Dynamic cards appear here -->
+        <section id="loading">
+          <div class="spinner">
+            <video muted loop autoplay src="balraTlas.vid.mp4"></video>
+          </div>
+          <ul id="text_anime">
+            <li style="--i: 0">F</li>
+            <li style="--i: 1">e</li>
+            <li style="--i: 2">t</li>
+            <li style="--i: 3">c</li>
+            <li style="--i: 4">h</li>
+            <li style="--i: 5">i</li>
+            <li style="--i: 6">n</li>
+            <li style="--i: 7">g</li>
+            <li style="--i: 8">D</li>
+            <li style="--i: 10">a</li>
+            <li style="--i: 11">t</li>
+            <li style="--i: 12">a</li>
+            <li style="--i: 13">.</li>
+            <li style="--i: 14">.</li>
+            <li style="--i: 15">.</li>
+          </ul>
+        </section>
+      </section>
+     
+    </main>
+     
+    <div id="CountryModal" class="hidden">
+      <!-- Popup country details -->
+      <button id="back"><i class="fa-solid fa-arrow-left"></i>Back</button>
+      <div id="info">
+        <span id="flag">
+          <img id="imageshow" src="" alt="" />
+        </span>
+        <span id="detail">
+          <h2 id="countryName">India</h2>
+          <div id="top">
+            <ul id="first">
+              <li>
+                <b>Native Name:</b>
+                <p id="native">Republic of India</p>
+               </li>
+              <li>
+                <b>Population:</b>
+                <p id="popul">1417492000</p>
+              </li>
+              <li>
+                <b>Region:</b>
+                <p id="regio">Asia</p>
+              </li>
+              <li>
+                <b>Sub Region:</b>
+                <p id="subregio">Southern Asia</p>
+              </li>
+              <li>
+                <b>Capital:</b>
+                <p id="capit">New Delhi</p>
+              </li>
+            </ul>
+            <ul id="site">
+              <li>
+                <b>Area:</b>
+                <p id="area">Utc</p>
+              </li>
+              <li>
+                <b>currencies:</b>
+                <p id="curren">Indian rupee</p>
+              </li>
+              <li>
+                <b>Languages:</b>
+                <p id="lang">English, Hindi, Tamil</p>
+              </li>
+            </ul>
+          </div>
+          <div id="border-countries">
+            <h2><i class="fa-solid fa-earth-americas"></i> Border Countries</h2>
+            <ul id="second" class="border">
+              <li>
+                <p1>Rusia</p1>
+              </li>
+              <li>
+                <p2>Rusia</p2>
+              </li>
+              <li>
+                <p3>Rusia</p3>
+              </li>
+            </ul>
+          </div>
+        </span>
+        <span id="impDetail">
+          <div id="Coat_image">
+            <h2><i class="fa-solid fa-shield"></i> Coat of Arms</h2>
+            <span id="cImg">
+              <img id="coatOfArms" src="" alt="nothing here" />
+            </span>
+          </div>
+          <div id="locationMap">
+            <h2><i class="fa-solid fa-map"></i> Maps</h2>
+            <ul>
+              <li>
+                <a id="google" href="#" target="_blank"
+                  ><i class="fa-solid fa-map-pin"></i><b>Google Maps</b></a
+                >
+              </li>
+              <li>
+                <a id="openStreet" href="#" target="_blank"
+                  ><i class="fa-solid fa-map-pin"></i><b>Open Street Maps</b></a
+                >
+              </li>
+            </ul>
+          </div>
+        </span>
+      </div>
+      <footer class="balratlas-footer">
+      <div class="footer-container">
+         <h2>BalrAtlas 🌍</h2>
+          <p>
+            A simple and beautiful country explorer built by
+            <strong>Balram</strong>. Explore countries, regions, and details in
+            an elegant interface.
+          </p>
+      </div>
+
+      <div class="footer-bottom">
+        <p>
+          © <span id="year"></span> Balram — BalrAtlas. All rights reserved.
+        </p>
+      </div>
+    </footer>
+    </div>
+    
+    <button id="scrollup"><i class="fa-solid fa-arrow-up"></i>GoUp</button>
+    <script src="script.js"></script>
+  </body>
+</html>
