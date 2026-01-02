@@ -29,10 +29,6 @@
 
 No backend or database — everything runs locally using the browser’s storage.
 
----
 
 
-## 🚀 How to Run Locally
-1. **Clone the repository**
-```bash
-git clone https://github.com/Balram-labs/walletwatch.git
+
