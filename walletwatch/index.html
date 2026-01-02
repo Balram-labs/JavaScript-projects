@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WalletWatch.com</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div id="logo">
+        <div id="wallet">
+          <div id="eye"></div>
+          <div class="coin"></div>
+          <div class="coin"></div>
+          <div class="coin"></div>
+        </div>
+        <div id="logoText">
+          Wallet
+          <span>Watch</span>
+        </div>
+      </div>
+      <nav>
+        <input id="theme" type="checkbox" />
+      </nav>
+    </header>
+    <main>
+      <form>
+        <fieldset id="addBudget">
+          <h1>Add Budget</h1>
+          <label for="budget">Budget:</label>
+          <input type="number" min="0" name="budget" id="budget" />
+          <button type="button" id="addbgt">Add Budget</button>
+        </fieldset>
+        <fieldset id="addExpns">
+          <h1>Add Expense</h1>
+          <label for="expenseTitle">Expense Title:</label>
+          <input type="text" name="expenseTitle" id="expenseTitel" />
+          <label for="amount">Amount:</label>
+          <input type="number" min="0" name="amount" id="amount" />
+          <button type="button" id="addExpense">Add Expense</button>
+        </fieldset>
+        <fieldset id="actions">
+        <button id="resetbtn" type="reset">Reset Form</button>
+        <button id="resetexpense" type="button">Reset Expense History</button>
+        </fieldset>
+      </form>
+      <section id="dashboard">
+        <menu>
+          <div id="data">
+            <span id="totalBudget">Total Budget : 00</span>
+            <span id="totalExpense">Total Expense : 00</span>
+            <span id="budgetLeft">Budget Left : 00.00</span>
+          </div>
+          <div id="history">
+            <table>
+              <caption>
+                Expense History :
+              </caption>
+              <thead>
+                <tr>
+                  <th>Expense Name</th>
+                  <th>Amount</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody id="tbodyelem"></tbody>
+            </table>
+          </div>
+        </menu>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-content">
+        <p>© <span id="year"></span> Wallet Watch</p>
+        <p>
+          Made by
+          <a href="#" target="_blank" rel="noopener noreferrer">Balram Kumar</a>
+        </p>
+
+        <p id="caution">WalletWatch allows you to easily track your monthly budget and expenses. Your data is saved locally, safe in your browser.</p>
+
+      </div>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>
